@@ -1,0 +1,85 @@
+#more-weather-btn{
+    display: none;
+}
+
+#show-less-btn{
+    display: none;
+}
+
+body {
+    background-color: skyblue;
+}
+.weather-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    text-align: center;
+    width: auto;    
+    line-height: 30px;
+    font-family: sans-serif;
+} 
+
+.weather-card{
+    text-align:center;
+    background-image: linear-gradient(to right top,hsl(200, 100%, 50%),hsl(200, 100%, 50%), hsl(187, 98%, 83%));
+    min-height: 10vh;
+    width: 50vw;
+    color: white;
+    font-size: larger;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 10px 10px #47d0da;
+}
+
+.weather-card:hover {
+    background-color: black;
+}
+
+.material-icons.md-60 {
+    font-size: 40px;
+    color: white;
+}
+
+#location,#temp,#desc,#date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.btn {
+    transition-duration: .4s;
+    width: 6rem;
+    height: 1.2rem;
+    background-image: linear-gradient(to right top,hsl(200, 100%, 50%),hsl(200, 100%, 50%), hsl(187, 98%, 83%));
+    border-radius: 7px;
+    margin-bottom:10px;
+    border: none;
+}
+.btn:hover {
+    transition-duration: 0.4s;
+    animation: color 2ms;
+    animation-name: color;
+    animation-duration: .2s;
+}
+
+@keyframes color {
+    0%{
+        background-image: linear-gradient(to right top,hsl(200, 100%, 50%),hsl(200, 100%, 50%), hsl(187, 98%, 83%));
+      }
+      10%{
+        background-image: linear-gradient(to right top,hsl(200, 100%, 50%),hsl(200, 100%, 50%),hsl(187, 98%, 83%),hsl(200, 100%, 50%) );
+      }
+      50%{
+        background-image: linear-gradient(to right top,hsl(200, 100%, 50%),hsl(187, 98%, 83%),hsl(200, 100%, 50%) );
+      }
+      60%{
+        background-image: linear-gradient(to left bottom,hsl(200, 100%, 50%),hsl(200, 100%, 50%), hsl(187, 98%, 83%),hsl(200, 100%, 50%));
+      }
+      100% {
+        background-image: linear-gradient(to left bottom,hsl(200, 100%, 50%),hsl(200, 100%, 50%), hsl(187, 98%, 83%));
+        
+      }
+}
